@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureMail | Email Security</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="brand">
+        <span class="brand-mark">S</span>
+        <span>SecureMail</span>
+    </div>
+    <span class="nav-label">EMAIL SECURITY ANALYSIS</span>
+</header>
+
+<main>
+    <section class="intro">
+        <p class="eyebrow">EMAIL THREAT DETECTION</p>
+        <h1>Check before you trust.</h1>
+        <p class="subtitle">
+            Analyse suspicious email content using machine learning.
+            Identify potential phishing attempts before interacting with them.
+        </p>
+    </section>
+
+    <section class="analyzer-card">
+        <div class="card-heading">
+            <div>
+                <h2>Email Analysis</h2>
+                <p>Paste the email content you want to examine.</p>
+            </div>
+            <span class="status">READY TO ANALYSE</span>
+        </div>
+
+        <label for="email">Email content</label>
+
+        <textarea
+            id="email"
+            maxlength="100000"
+            placeholder="Paste the email subject and message here..."
+        ></textarea>
+
+        <div class="input-footer">
+            <span>Do not enter passwords or sensitive information.</span>
+            <span id="charCount">0 / 100000</span>
+        </div>
+
+        <button id="analyzeBtn" onclick="analyzeEmail()">
+            Analyse Email
+            <span aria-hidden="true">→</span>
+        </button>
+
+        <div id="result" class="result" aria-live="polite"></div>
+    </section>
+
+    <section class="info-grid">
+        <article class="info-card">
+            <span class="number">01</span>
+            <h3>Text Analysis</h3>
+            <p>
+                Examines email text and identifies patterns
+                associated with phishing messages.
+            </p>
+        </article>
+
+        <article class="info-card">
+            <span class="number">02</span>
+            <h3>Machine Learning</h3>
+            <p>
+                Uses a trained classification model to
+                analyse the submitted email.
+            </p>
+        </article>
+
+        <article class="info-card">
+            <span class="number">03</span>
+            <h3>Instant Results</h3>
+            <p>
+                Displays the predicted email category
+                and estimated phishing probability.
+            </p>
+        </article>
+    </section>
+
+    <section class="notice">
+        <strong>Important security note</strong>
+        <p>
+            Results are machine-learning predictions, not a guarantee
+            of safety. This tool analyses text only and does not verify
+            sender identity, links or email headers.
+        </p>
+    </section>
+</main>
+
+<footer>
+    <span>SecureMail</span>
+    <span>Machine Learning Based Cybersecurity Project</span>
+</footer>
+
+<script src="/static/script.js"></script>
+</body>
+</html>

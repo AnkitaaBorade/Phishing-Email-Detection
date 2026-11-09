@@ -1,0 +1,17 @@
+PHISHING EMAIL DETECTION RESULTS
+========================================
+Accuracy: 98.48%
+
+Classification Report:
+              precision    recall  f1-score   support
+
+  Legitimate       0.99      0.98      0.98      7847
+    Phishing       0.98      0.99      0.99      8569
+
+    accuracy                           0.98     16416
+   macro avg       0.98      0.98      0.98     16416
+weighted avg       0.98      0.98      0.98     16416
+
+Confusion Matrix:
+[[7702  145]
+ [ 105 8464]]
